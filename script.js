@@ -1,8 +1,9 @@
 let touchs = document.querySelectorAll('.touch.n')
 let screen = document.querySelector('.screen')
 let clearTouch = document.querySelector('.touch.clear')
-let hystoryTouch = document.querySelector('.touch.H')
+let hystoryTouch = document.querySelector('.touch.hystory')
 let equal = document.querySelector('.touch.equal')
+let blankTouch = document.querySelector('.touch.blank')
 const hystory =[['1+1', 2],['2+1', 3],['3+1', 4],['4+1', 5],['5+1', 6]]
 
 
@@ -41,14 +42,24 @@ hystoryTouch.addEventListener('click',(e)=>{
        screen.innerHTML = ''
     }else{
         screen.innerHTML = ''
+        
         for(let i=0; i<3;i++){  
             let length = hystory.length - 1
             let index = length-i
             screen.innerHTML += hystory[index][0]+"="+hystory[index][1]+"</br>"
         }
+            
+           /*
+           hystory.forEach(calc=>{
+            screen.innerHTML += calc[0]+"="+calc[1]+"</br>"
+           })
+            */
     }
     
     
     screen.classList.toggle('hystory')
 })
 
+blankTouch.addEventListener('click',(e)=>{
+    alert('Project 1 : simple calculator')
+})

@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 body{
     height: 100vh;
@@ -37,7 +38,6 @@ body{
     
 }
 .screen{
-    overflow-y: scroll;
     width: 100%;
     height: 35%;
     padding: 30px;
@@ -60,7 +60,7 @@ body{
 }
 
 .touch{
-    color: gray;
+    color: #808080;
     width: 50px;
     height: 50px;
     display: flex;
@@ -85,3 +85,20 @@ body{
 
 }
 
+@media only screen {
+    .container{
+        border-radius: 0;;
+    }
+    .calculator{
+        height: 600px;
+        width: 400px;
+        background-color: #252222;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin:  0 20px;
+        
+    }
+}
