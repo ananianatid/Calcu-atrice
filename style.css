@@ -101,4 +101,8 @@ body{
         margin:  0 20px;
         
     }
+    .touch:hover{
+        color: #808080;
+        background-color: #252222;
+    }
 }
