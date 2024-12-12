@@ -4,7 +4,7 @@ let clearTouch = document.querySelector('.touch.clear')
 let hystoryTouch = document.querySelector('.touch.hystory')
 let equal = document.querySelector('.touch.equal')
 let blankTouch = document.querySelector('.touch.blank')
-const hystory =[['1+1', 2],['2+1', 3],['3+1', 4],['4+1', 5],['5+1', 6]]
+const hystory =[]
 
 
 
