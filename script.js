@@ -3,7 +3,7 @@ let screen = document.querySelector('.screen')
 let clearTouch = document.querySelector('.touch.clear')
 let hystoryTouch = document.querySelector('.touch.hystory')
 let equal = document.querySelector('.touch.equal')
-let blankTouch = document.querySelector('.touch.blank')
+let deleteTouch = document.querySelector('.touch.delete')
 const hystory =[]
 
 
@@ -60,6 +60,6 @@ hystoryTouch.addEventListener('click',(e)=>{
     screen.classList.toggle('hystory')
 })
 
-blankTouch.addEventListener('click',(e)=>{
-    alert('Project 1 : simple calculator')
+deleteTouch.addEventListener('click',(e)=>{
+     screen.innerHTML = screen.innerHTML.slice(0, -1)
 })
